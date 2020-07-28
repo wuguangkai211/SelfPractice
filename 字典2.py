@@ -21,6 +21,6 @@ for name, address in book:
 # 添加一对键值—值配对
 ab['Guido'] = 'guido@python.org'
 
-# 我们可以利用 `in` 运算符来检查某对键值—值配对是否存在。
+# 我们可以利用 `in` 运算符来检查某对 键值—值 配对是否存在。
 if 'Guido' in ab:
     print("\nGuido's address is", ab['Guido'])
