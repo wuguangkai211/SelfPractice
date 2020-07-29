@@ -30,3 +30,5 @@ print('characters start to end is', name[:])
 # 第三个参数：步长
 print(shoplist[::3])
 print(shoplist[::-1])
+
+# 以上的方法对元组、字符串、列表均有效
