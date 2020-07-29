@@ -1,5 +1,8 @@
 
+# 列表是序列的一种表现形式
 shoplist = ['apple', 'mango', 'carrot', 'banana']
+
+# 字符串亦是序列的一种表现形式
 name = 'swaroop'
 
 # Indexing or 'Subscription' operation 
