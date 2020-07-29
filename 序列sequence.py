@@ -26,3 +26,7 @@ print('characters 1 to 3 is', name[1:3])
 print('characters 2 to end is', name[2:])
 print('characters 1 to -1 is', name[1:-1])
 print('characters start to end is', name[:])
+
+# 第三个参数：步长
+print(shoplist[::3])
+print(shoplist[::-1])
