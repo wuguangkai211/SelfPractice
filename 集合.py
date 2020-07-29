@@ -1,4 +1,5 @@
 # set 集合
+
 bri = set(['brazil', 'russia', 'india'])
 
 if 'india' in bri:
