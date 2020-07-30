@@ -8,7 +8,7 @@ if name.startswith('Swa'):
 if 'a' in name:
     print('Yes, it contains the string "a"')
 
-if name.find('war'):
+if name.find('war') != -1:
     print('Yes, it contains the string "war"')
 
 # 将 list 以加载分隔符的形式输出
