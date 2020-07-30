@@ -1,4 +1,5 @@
 # 这是一个字符串对象
+
 name = 'Swaroop'
 
 if name.startswith('Swa'):
@@ -7,12 +8,16 @@ if name.startswith('Swa'):
 if 'a' in name:
     print('Yes, it contains the string "a"')
 
-if name.find('war') != -1:
+if name.find('war'):
     print('Yes, it contains the string "war"')
 
+# 将 list 以加载分隔符的形式输出
 delimiter = '_*_'
 mylist = ['Brazil', 'Russia', 'India', 'China']
 print(delimiter.join(mylist))
+
+# 对照
+print(mylist)
 
 
 """ Help on class str in module builtins:
@@ -410,4 +415,3 @@ class str(object)
  |      in the resulting dictionary, each character in x will be mapped to the
  |      character at the same position in y. If there is a third argument, it
  |      must be a string, whose characters will be mapped to None in the result. """
- 
