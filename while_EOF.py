@@ -8,7 +8,7 @@ while True :
         break
 
 
-# input通过识别异常来中断
+# Python 中，用 try except 语句块捕获并处理异常
 
 """ while True :
     try :
