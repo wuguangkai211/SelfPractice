@@ -1,7 +1,8 @@
-# reference
+# reference 引用
 
 print('Simple Assignment')
 shoplist = ['apple', 'mango', 'carrot', 'banana']
+
 # mylist 只是指向同一对象的另一种名称
 mylist = shoplist
 
@@ -13,6 +14,8 @@ print('mylist is', mylist)
 # 注意到 shoplist 和 mylist 二者都
 # 打印出了其中都没有 apple 的同样的列表，以此我们确认
 # 它们指向的是同一个对象
+# 如果前面是：`mylist = list(shoplist)`, 则会产生一个新的对象，他与原对象无关
+# 即会输出 `apple`
 
 print('Copy by making a full slice')
 # 通过生成一份完整的切片制作一份列表的副本
