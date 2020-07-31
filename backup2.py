@@ -4,7 +4,7 @@ import time
 # 1. 需要备份的文件与目录将被
 # 指定在一个列表中。
 # 例如在 Windows 下：
-source = ['"C:\\My Documents"', 'C:\\Code']
+source = [r"C:\Users\lenovo\Desktop\test", r"C:\Users\lenovo\Desktop\testagain"]
 # 又例如在 Mac OS X 与 Linux 下：
 # source = ['/Users/swa/notes']
 # 在这里要注意到我们必须在字符串中使用双引号
@@ -37,8 +37,7 @@ if not os.path.exists(today):
     print('Successfully created directory', today)
 
 # 5. 我们使用 zip 命令将文件打包成 zip 格式
-zip_command = 'zip -r {0} {1}'.format(target,
-                                      ' '.join(source))
+zip_command = 'zip -r {0} {1}'.format(target, ' '.join(source))
 
 # 运行备份
 print('Zip command is:')
