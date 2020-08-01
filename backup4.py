@@ -20,7 +20,7 @@ target_dir = 'E:\\Backup'
 
 # 如果目标目录还不存在，则进行创建
 if not os.path.exists(target_dir):
-    os.mkdir(target_dir)  # 创建目录
+    os.mkdir(target_dir)        # 创建目录
 
 # 3. 备份文件将打包压缩成 zip 文件。
 # 4. 将当前日期作为主备份目录下的
