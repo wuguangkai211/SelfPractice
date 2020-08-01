@@ -1,13 +1,15 @@
 # coding=UTF-8
 
 class Robot:
-    """表示有一个带有名字的机器人。"""
+    """表示有一个带有名字的机器人"""
 
     # 一个类变量，用来计数机器人的数量
     population = 0
 
     def __init__(self, name):
         """初始化数据"""
+        
+        # 通过 self 分配对象变量
         self.name = name
         print("(Initializing {})".format(self.name))
 
