@@ -16,7 +16,7 @@ class Robot:
 
         # 当有人被创建时，机器人
         # 将会增加人口数量
-        Robot.population += 1
+        Robot.population += 1   # OR: self.__class__.population
     # 结束
 
     # 定义对象方法（默认）
@@ -41,7 +41,8 @@ class Robot:
         print("Greetings, my masters call me {}.".format(self.name))
     # 结束
 
-    # 定义类方法，需要额外进行标识
+    # 定义类方法，使用 `cls` 作为参数。需要使用装饰器（Decorator）额外进行标识：@classmethod（对应类变量）
+    # 等价于：how_many = classmethod(how_many)
     @classmethod
     def how_many(cls):
         """打印出当前的人口数量"""
@@ -64,3 +65,7 @@ droid1.die()
 droid2.die()
 
 Robot.how_many()
+
+
+# 注意：当一个对象变量与一个类变量名称相同时，类变量将会被隐藏。
+# `how_many` 实际上是一个属于类而非属于对象的方法。这就意味着我们可以将它定义为一个 `classmethod（类方法）` 或是一个 `staticmethod（静态方法）`，这取决于我们是否需要知道这一方法属于哪个类。由于我们已经引用了一个类变量，因此我们使用 `classmethod（类方法）`。
