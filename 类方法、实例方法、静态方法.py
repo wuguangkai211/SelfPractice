@@ -13,7 +13,7 @@ class Test:
         print("Class method")
 # end
 
-# class Tests
+# class Tests inherit from class Test
 class Tests(Test):
     @classmethod
     def fun3(cls):
