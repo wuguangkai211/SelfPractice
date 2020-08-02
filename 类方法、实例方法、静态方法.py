@@ -14,7 +14,7 @@ class Test:
 # end
 
 # class Tests
-class Tests:
+class Tests(Test):
     @classmethod
     def fun3(cls):
         print("Tests' class method")
