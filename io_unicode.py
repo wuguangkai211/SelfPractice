@@ -2,11 +2,13 @@
 
 import io
 
+# wt模式下，python写文件时会用\r\n来表示换行
 f = io.open("abc.txt", "wt", encoding="utf-8")
 f.write(u"神秘的帅哥")        # Imagine non-English language here
 f.close()
 
-text = io.open("abc.txt", encoding="utf-8").read()
+# rt模式下，python在读取文本时会自动把\r\n转换成\n
+text = io.open("abc.txt", "rt", encoding="utf-8").read()
 print(text)
 
 
