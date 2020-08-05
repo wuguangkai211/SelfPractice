@@ -17,7 +17,7 @@ try:
     # 其他工作能在此处继续正常运行
 except EOFError:
     print('Why did you do an EOF on me?!')
-except ShortInputException as ex:
+except ShortInputException as ex:   # 将该类存储 `as（为）` 相应的错误名或异常名
     print(('ShortInputException: The input was ' +
            '{0} long, expected at least {1}')
           .format(ex.length, ex.atleast))
