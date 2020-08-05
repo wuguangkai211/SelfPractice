@@ -1,5 +1,4 @@
 # SelfPractice
-Python 学习之旅
-推荐一本书：A Byte Of Python
+A Byte Of Python 学习笔记整理
 
 仅供交流学习之用！违者后果自负！
