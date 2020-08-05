@@ -16,7 +16,7 @@ try:
         raise ShortInputException(len(text), least)
     # 其他工作能在此处继续正常运行
 except EOFError:
-    print('Why did you do an EOF on me?')
+    print('Why did you do an EOF on me?!')
 except ShortInputException as ex:
     print(('ShortInputException: The input was ' +
            '{0} long, expected at least {1}')
