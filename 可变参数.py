@@ -1,4 +1,4 @@
-
+# 孤星得元组，双星获字典
 def total(a = 5, *numbers, **phonebook):
     print('a', a)
 
