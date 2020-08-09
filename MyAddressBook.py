@@ -39,5 +39,8 @@ class Adbook:
 
 
 myadbook = Adbook()         # 创建一个新的地址簿对象
-myadbook.addPerson()
-print(myadbook.__dict__["Person 1"].name)
+
+for i in range(2):
+    myadbook.addPerson()
+    print("Now we have {0} people.".format(myadbook.now))
+    print(myadbook.__dict__[f"Person {i+1}"].name)
