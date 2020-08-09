@@ -1,3 +1,5 @@
+# 这个函数可以实现简单的格式化输入
+
 str = "this is string example....wow!!!"
 print (str.split())        # 以空格为分隔符
 print (str.split('i',1))   # 以 i 为分隔符
