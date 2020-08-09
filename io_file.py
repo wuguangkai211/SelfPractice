@@ -3,7 +3,7 @@ Programming is fun
 When the work is done
 if you wanna make your work also fun:
     use Python!
-'''
+'''             # 首行加反斜杠，实现代码换行
 
 # 打开文件以编辑（'w'riting）
 f = open('poem.txt', 'w')
