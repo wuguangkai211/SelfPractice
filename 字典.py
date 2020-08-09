@@ -17,7 +17,7 @@ print('\nThere are {} contacts in the address-book\n'.format(len(ab)))
 for name, address in ab.items():
     print('Contact {} at {}'.format(name, address))
 
-# 添加一对键值—值配对
+# 添加一对键值—值配对（直接添加就可以，很简单）
 ab['Guido'] = 'guido@python.org'
 
 if 'Guido' in ab:
