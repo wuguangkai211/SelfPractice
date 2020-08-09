@@ -1,5 +1,13 @@
 # coding=utf-8
 # My Address Book
+import os
+
+# 指定目标文件夹，作为数据的存取地点
+adb_dir = r"E:\Backup"
+
+# 如果目标目录还不存在，则进行创建
+if not os.path.exists(adb_dir):
+    os.mkdir(adb_dir)
 
 class Person:
     """ 这是一个·人·类 """
@@ -67,3 +75,21 @@ for i in range(2):
     myadbook.addPerson()
     print("Now we have {0} people.".format(myadbook.getSum()))
     print(myadbook.__dict__[f"Person {i+1}"].getName())
+
+# 读写
+f = open("Address.txt", "a+")
+
+addtext = """*
+Name: {name}
+Address: {address}
+Relationship: {reship}
+E-mail: {email}
+Telephone number: {tel}
+*\n""".format(name=myadbook.__dict__["Person 1"].getName(), 
+              address=myadbook.__dict__["Person 1"].getAddress(),
+              reship=myadbook.__dict__["Person 1"].getRelationship(),
+              email=myadbook.__dict__["Person 1"].getEmail(),
+              tel=myadbook.__dict__["Person 1"].getTel())
+
+f.write(addtext)
+f.close()
