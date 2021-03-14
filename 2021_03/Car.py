@@ -1,6 +1,3 @@
-from turtle import ycor
-
-
 class Car:
     """ 模拟汽车 """
     
